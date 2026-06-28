@@ -1,0 +1,21 @@
+{
+  "name": "Red Vecinal Sevilla",
+  "short_name": "RPVS",
+  "description": "Confederacion Provincial Red Vecinal de Sevilla, FEVES y AAVV de Sevilla.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0099cc",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
