@@ -10,8 +10,11 @@ export interface SeoRouteData {
   readonly keywords?: readonly string[];
 }
 
-const siteName = 'Confederación Provincial Red Vecinal de Sevilla';
+const siteName = 'Red Vecinal Sevilla';
+const primaryOrigin = 'https://www.redvecinalsevilla.es';
 const defaultKeywords = [
+  'Red Vecinal Sevilla',
+  'redvecinalsevilla',
   'Confederación Provincial Red Vecinal de Sevilla',
   'RPVS',
   'FEVES',
@@ -54,9 +57,12 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:title', content: fullTitle });
     this.meta.updateTag({ property: 'og:description', content: seo.description });
     this.meta.updateTag({ property: 'og:url', content: canonicalUrl });
+    this.meta.updateTag({ property: 'og:image', content: `${primaryOrigin}/assets/logoSdos.jpeg` });
+    this.meta.updateTag({ property: 'og:image:alt', content: 'Logotipo de Red Vecinal Sevilla' });
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
     this.meta.updateTag({ name: 'twitter:title', content: fullTitle });
     this.meta.updateTag({ name: 'twitter:description', content: seo.description });
+    this.meta.updateTag({ name: 'twitter:image', content: `${primaryOrigin}/assets/logoSdos.jpeg` });
     this.setCanonical(canonicalUrl);
   }
 
@@ -70,7 +76,7 @@ export class SeoService {
 
   private getCanonicalUrl(): string {
     const path = this.router.url.split('?')[0].split('#')[0];
-    return `${this.document.location.origin}${path}`;
+    return `${primaryOrigin}${path}`;
   }
 
   private setCanonical(url: string): void {

@@ -9,13 +9,13 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
-    title: 'Inicio - Confederación Provincial Red Vecinal de Sevilla',
+    title: 'Red Vecinal Sevilla - RPVS y FEVES',
     data: {
       seo: {
-        title: 'Inicio',
+        title: 'Red Vecinal Sevilla',
         description:
-          'Confederación Provincial Red Vecinal de Sevilla, confederación provincial de entidades vecinales de Sevilla.',
-        keywords: ['RPVS', 'Confederación Provincial Red Vecinal de Sevilla', 'movimiento vecinal sevillano'],
+          'Red Vecinal Sevilla, Confederación Provincial Red Vecinal de Sevilla: RPVS, FEVES, federaciones vecinales y AAVV de Sevilla.',
+        keywords: ['Red Vecinal Sevilla', 'RPVS', 'FEVES', 'Confederación Provincial Red Vecinal de Sevilla', 'movimiento vecinal sevillano'],
       },
     },
   },
@@ -27,8 +27,8 @@ export const routes: Routes = [
       seo: {
         title: 'Quienes somos',
         description:
-          'Conoce RPVS, la Confederación Provincial Red Vecinal de Sevilla y su trabajo provincial con federaciones vecinales.',
-        keywords: ['quienes somos RPVS', 'confederación vecinal Sevilla'],
+          'Conoce Red Vecinal Sevilla, RPVS y su trabajo provincial con FEVES, federaciones vecinales y AAVV de Sevilla.',
+        keywords: ['quienes somos RPVS', 'Red Vecinal Sevilla', 'confederación vecinal Sevilla'],
       },
     },
   },
@@ -40,8 +40,8 @@ export const routes: Routes = [
       seo: {
         title: 'Federaciones',
         description:
-          'Federación Nazarena, Federación UTER y FEVES, entidades federadas en la Confederación Provincial Red Vecinal de Sevilla.',
-        keywords: ['federaciones vecinales Sevilla', 'FEVES', 'Federación UTER', 'Federación Nazarena'],
+          'Federación Nazarena, Federación UTER y FEVES, entidades federadas en Red Vecinal Sevilla y AAVV de la provincia.',
+        keywords: ['federaciones vecinales Sevilla', 'Red Vecinal Sevilla', 'FEVES', 'AAVV Sevilla', 'Federación UTER', 'Federación Nazarena'],
       },
     },
   },
